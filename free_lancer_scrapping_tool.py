@@ -26,9 +26,6 @@ def validate_job(all_jobs):
                 valid_jobs.append([job,descr,skill])
     return valid_jobs
         
-def send_message():
-    Toaster.show_toast("Hello World!!!","Python is 10 seconds awsm!")
-
 for job in html.find_all(class_ = "JobSearchCard-primary"):
     add_job(job)
 
